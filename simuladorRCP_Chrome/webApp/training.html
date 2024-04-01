@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome,safari=1" />
+    <meta charset="UTF-8" />
+    <title>Simulador de RCP</title>
+    <script src="serial.js"></script>
+    <link rel="icon" href="images/titleIcon.ico">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@latest/dist/Chart.min.js"></script>
+    <link rel="stylesheet" href="training.css" />
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="images/forAppIcon.svg" alt="logo" />
+      <nav>
+        <ul class="nav__links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="#">Entrenamiento</a></li>
+          <li><a href="exam.html">Evaluación</a></li>
+          <li><a href="userManual.html">Manual</a></li>
+        </ul>
+      </nav>
+      <a class="cta" href="contact.html"><button>Contacto</button></a>
+    </header>
+    <div class="main">
+      <div id="topText">
+        <h1>
+          Bienvenido al modo de entrenamiento.
+        </h1>
+      </div>
+      <div id="connectButton">
+        <button class="connect" onclick="listSerial();">Conectar simulador</button>
+      </div>
+      <div id="info"></div>
+      <div class="chart-container">
+        <canvas id="pressureChart" height="350px"></canvas>
+        <script src="training.js"></script>
+      </div>
+      <p class="bpmText">BPM:</p>
+      <p id="bpm"></p>
+    </div>
+  </body>
+</html>

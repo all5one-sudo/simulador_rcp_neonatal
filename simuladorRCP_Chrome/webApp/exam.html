@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome,safari=1" />
+    <meta charset="UTF-8" />
+    <title>Simulador de RCP</title>
+    <link rel="icon" href="images/titleIcon.ico" />
+    <script>
+      document.getElementById("chart-container").style.display = "none";
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@latest/dist/Chart.min.js"></script>
+    <script src="serialExam.js"></script>
+    <link rel="stylesheet" href="exam.css" />
+  </head>
+  <body onload="document.getElementById('chart-container').style.display = 'none';
+  document.getElementById('pieCharts').style.display = 'none';
+  document.getElementsByClassName('loader').style.display = 'none';">
+    <header>
+      <img class="logo" src="images/forAppIcon.svg" alt="logo" />
+      <nav>
+        <ul class="nav__links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="training.html">Entrenamiento</a></li>
+          <li><a href="#">Evaluación</a></li>
+          <li><a href="userManual.html">Manual</a></li>
+        </ul>
+      </nav>
+      <a class="cta" href="contact.html"><button>Contacto</button></a>
+    </header>
+    <div class="main">
+      <div id="topText">
+        <h1>Bienvenido al modo de evaluación.</h1>
+      </div>
+      <div id="connectButton">
+        <button class="connect" onclick="listSerials();">Inicio/fin evaluación</button>
+        <!--<button class="connect" onclick="showResults();">Finalizar evaluación</button>-->
+      </div>
+      <div id="info"></div>
+      <!--<div class="loader"></div>-->
+      <div id="chart-container">
+        <canvas id="pressureChart" height="350px"></canvas>
+      </div>
+      <div id="pieCharts">
+        <canvas id="piePressureChart" height="50px"></canvas>
+        <canvas id="pieFreqChart" height="50px"></canvas>
+      </div>
+      <script src="exam.js"></script>
+    </div>
+  </body>
+</html>
