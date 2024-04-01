@@ -13,22 +13,22 @@ La aplicación está programada enteramente en Python. Se hace uso de la librer�
 
 ### Interfaz de usuario
 
-![GUI](/img/gui.png)
+![GUI](./img/gui.png)
 
 La imagen muestra la interfaz de usuario que aparece en el momento de ejecución de la misma. Por defecto nos encontramos en el modo de entrenamiento, sin embargo, al pasar al modo de evaluación, se tiene lo siguiente:
 
-![Modo Evaluación](/img/eval.png)
+![Modo Evaluación](./img/eval.png)
 
 ### Uso
 Al trabajar en modo de entrenamiento, las gráficas en tiempo real tienen la siguiente apariencia:
 
-![Graficas](/img/train.png)
+![Graficas](./img/train.png)
 
 Una vez que se pasa al modo de entrenamiento, luego de finalizada la evaluación, se tiene la posibilidad de exportar un reporte en formato PDF, que incluye las gráficas de desempeño. Sin embargo, los porcentajes de calidad tanto de compresiones como de frecuencia se muestran ni bien se presiona el botón de finalizar como se muestra a continuación.
 
-![Fin evaluación](/img/endEval.png)
+![Fin evaluación](./img/endEval.png)
 
 Al seleccionar la opción de exportar resultados, se abre una ventana del explorador de archivos que permite seleccionar la ubicación y el nombre del archivo que contiene el reporte de desempeño. De allí se obtiene algo como lo que se puede ver a continuación:
 
-![Reporte](/img/report.png)
+![Reporte](./img/report.png)
 
